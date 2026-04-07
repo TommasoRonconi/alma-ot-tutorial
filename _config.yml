@@ -8,7 +8,7 @@ title: "ALMA Web-based OT Tutorial"
 description: >-
   A step-by-step guide to using the web-based ALMA Observing Tool
   for Cycle 13 proposal submission.
-baseurl: "alma-ot-tutorial"
+baseurl: "/alma-ot-tutorial"
 url: "https://tommasoronconi.github.io"
 
 # Theme
