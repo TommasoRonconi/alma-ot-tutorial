@@ -10,9 +10,9 @@ For guidance and reproducibility
 ├── index.md                 # Home page
 ├── docs/                    # Tutorial sections (one .md per section)
 │   ├── 01_introduction.md
-│   ├── 02_proposal-info.md
+│   ├── 02_before_you_start.md
 │   ├── ...
-│   └── 11-differences-workarounds.md
+│   └── 09_tips_and_known_issues.md
 └── readme.md                # This file (excluded from build)
 ```
 
