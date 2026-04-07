@@ -108,7 +108,7 @@ This panel provides a text field where you describe the scientific justification
 ![Science Case](../images/04.7_science_case.png)
 
 {: .tip }
-The Science Case text field supports basic formatting. Depending on the cycle, there may be a character limit — check the current Proposer's Guide for the exact constraints.
+The Science Case text field supports basic formatting. Depending on the cycle, there may be a character limit — check the current [ALMA Proposer's Guide](https://almascience.eso.org/proposing/proposers-guide) for the exact constraints.
 
 {: .note}
 The system will check whether the limits have been respected: do not cheat, the system knows.
