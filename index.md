@@ -25,7 +25,7 @@ The Web-based OT replaces the desktop Java application used in previous cycles. 
 4. [The Proposal section](docs/04_proposal_section.md) — General proposal information
 5. [The Science Plan](docs/05_science_plan.md) — Field setup, spectral setup, calibration, control & performance, technical justification
 6. [Science background](docs/06_science_background.md) — Flux estimation, largest recoverable scale, ACA, spectral line sensitivity
-7. [Worked example: the Cosmic Eyelash](link docs/07_worked_example.md) — A complete proposal walkthrough
+7. [Worked example: the Cosmic Eyelash](docs/07_worked_example.md) — A complete proposal walkthrough
 8. [Validation and submission](docs/08_validation_and_submission.md) — Validating, submitting, and managing proposals
 9. [Tips and known issues](docs/09_tips_and_known_issues.md) — Workarounds and things to watch out for
 
