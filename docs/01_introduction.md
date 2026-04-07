@@ -1,7 +1,7 @@
 ---
-title: Getting Started
 layout: default
-nav_order: 2
+title: Introduction
+nav_order: 1
 ---
 
 # Introduction
@@ -14,22 +14,24 @@ The transition brings some significant changes to the way you prepare and manage
 
 ## What has changed
 
-The most important differences between the desktop OT and the web-based OT are:
+The most important differences between the desktop OT and the web-based OT are summarized below.
 
-**No local files.** Proposals are no longer saved as `.aot` files on your computer. Everything lives on the server. There is no "save to disk" option, and `.aot` files from previous cycles cannot be imported into the new tool. If you have an unsubmitted proposal from a previous cycle that you want to reuse, you will need to recreate it from scratch.
+{: .new }
+> **No local files.** Proposals are no longer saved as `.aot` files on your computer. Everything lives on the server. There is no "save to disk" option, and `.aot` files from previous cycles cannot be imported into the new tool. If you have an unsubmitted proposal from a previous cycle that you want to reuse, you will need to recreate it from scratch.
 
 **Autosaving.** The web-based OT saves your work automatically. For text fields (project name, abstract, duplicate observations), the save is triggered after you stop typing for 500 ms. For all other fields, saving happens when you click away from the field. There is only one version of a proposal at any time — each autosave overwrites the previous state.
 
 **Multi-user access.** All investigators listed on a proposal (PI, CoPI, CoI) have access to the same draft. This is convenient for collaboration, but it also means that two people editing the same proposal simultaneously can overwrite each other's changes without warning. Clear communication among collaborators about who is editing and when is essential.
 
+{: .tip }
+If you want to test a different observing strategy or let a collaborator experiment, make a copy of the proposal first using "Open project as new proposal". This creates an independent draft.
+
 **Proposal statuses.** Proposals in the staging area can be in one of three states: *Draft*, *Submitted*, or *Submitted with Unsubmitted Changes*. Draft proposals can be deleted. Submitted proposals can only be retracted via a helpdesk ticket. If a submitted proposal has unsubmitted changes, you can revert it to the last submitted version — but the unsubmitted changes will be lost.
 
 **Copying proposals.** You can make a copy of any proposal (draft or submitted) via the "Open project as new proposal" function. The copy is created in draft status. This is useful for testing different observing strategies without modifying your original proposal.
 
-> **Tip:** Use the tab key rather than Enter to move between fields. Enter does not work reliably in all input fields of the web OT.
-
-{: .tip }
-Use the tab key rather than Enter to move between fields. Enter does not work reliably in all input fields of the web OT.
+{: .warning }
+Use the **tab** key rather than Enter to move between fields. The Enter key does not work reliably in all input fields of the web-based OT.
 
 ## What has stayed the same
 
@@ -39,6 +41,8 @@ The scientific content of a proposal — science goals, field setup, spectral se
 
 We will walk through the proposal preparation process in the order you would naturally encounter it in the OT. Along the way, we will use a concrete science case — Band 7 observations of the Cosmic Eyelash, a gravitationally lensed starburst galaxy at z = 2.3 — as a running example.
 
-A separate [science background](06_science_background.md) page covers the technical foundations (flux estimation, largest recoverable scale, ACA usage, spectral line sensitivity) that are relevant regardless of the specific proposal you are preparing. If you are new to interferometry or to ALMA, you may want to read that page first.
+A separate [science background]({% link docs/06_science_background.md %}) page covers the technical foundations (flux estimation, largest recoverable scale, ACA usage, spectral line sensitivity) that apply regardless of the specific proposal you are preparing. If you are new to interferometry or to ALMA, you may want to read that page first.
 
-Let's get started: [Before you start →](02_before_you_start.md)
+---
+
+[Next: Before you start →]({% link docs/02_before_you_start.md %})
