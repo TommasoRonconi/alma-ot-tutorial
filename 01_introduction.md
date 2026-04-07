@@ -28,8 +28,8 @@ The most important differences between the desktop OT and the web-based OT are:
 
 > **Tip:** Use the tab key rather than Enter to move between fields. Enter does not work reliably in all input fields of the web OT.
 
-> [!WARNING]
-> Use the tab key rather than Enter to move between fields.
+{: .tip }
+Use the tab key rather than Enter to move between fields. Enter does not work reliably in all input fields of the web OT.
 
 ## What has stayed the same
 
