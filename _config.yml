@@ -9,7 +9,7 @@ description: >-
   A step-by-step guide to using the web-based ALMA Observing Tool
   for Cycle 13 proposal submission.
 baseurl: "alma-ot-tutorial"
-url: "https://TommasoRonconi.github.io"
+url: "https://tommasoronconi.github.io"
 
 # Theme
 remote_theme: just-the-docs/just-the-docs@v0.10.1
@@ -37,7 +37,7 @@ aux_links_new_tab: true
 
 # Footer content
 footer_content: >-
-  Italian ARC &mdash; Tutorial for ALMA Cycle 13 proposal submission
+  Italian ARC &mdash; Tutorial for ALMA Cycle >=13 proposal submission
 
 # Back to top link
 back_to_top: true
