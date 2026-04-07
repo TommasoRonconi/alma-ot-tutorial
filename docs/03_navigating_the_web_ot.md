@@ -5,4 +5,4 @@ nav_order: 3
 ---
 
 # Page under construction
-[!Page has yet to be added](../images/under_construction.png)
+![Page has yet to be added](../images/under_construction.png)
