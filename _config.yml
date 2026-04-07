@@ -71,6 +71,6 @@ callouts:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - README_dev.md
+  - readme.md
   - "*.pdf"
   - .gitignore
