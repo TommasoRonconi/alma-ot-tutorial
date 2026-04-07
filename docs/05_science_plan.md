@@ -6,6 +6,9 @@ nav_order: 5
 
 ![Under construction](../images/under_construction.png)
 
+{: .warning}
+This page is under construction
+
 # The Science Plan
 
 The **Science Plan** tab is where the technical specification of your observations is defined. This is where you will spend most of your time in the OT.
