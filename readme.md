@@ -1,5 +1,7 @@
 # ALMA Web-based OT Tutorial — Developer Notes
 
+For guidance and reproducibility
+
 ## Repository structure
 
 ```
@@ -7,13 +9,11 @@
 ├── _config.yml              # Jekyll configuration (theme, callouts, metadata)
 ├── index.md                 # Home page
 ├── docs/                    # Tutorial sections (one .md per section)
-│   ├── 01-getting-started.md
-│   ├── 02-proposal-info.md
+│   ├── 01_introduction.md
+│   ├── 02_proposal-info.md
 │   ├── ...
 │   └── 11-differences-workarounds.md
-├── Gemfile                  # Ruby dependencies (for local build only)
-├── .gitignore
-└── README_dev.md            # This file (excluded from build)
+└── readme.md                # This file (excluded from build)
 ```
 
 ## Deploying to GitHub Pages
