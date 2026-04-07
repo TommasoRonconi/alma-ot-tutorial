@@ -122,6 +122,12 @@ This panel asks whether your targets have been observed by ALMA before, or wheth
 {: .warning }
 This is a required field and reviewers pay attention to it. Failing to acknowledge known duplicates can negatively affect your proposal's evaluation.
 
+## Helper side-window
+
+Note that, by clicking on the question mark at the left-hand side of each Sections' title, a short manual page opens to the right of the page. Providing further help on how to complete the selected Section.
+
+![Helper side-window](../images/04.9_helper_sidewindow.png)
+
 ---
 
 [← Navigating the Web OT](03_navigating_the_web_ot.md) · [Next: The Science Plan →](05_science_plan.md)
