@@ -41,8 +41,8 @@ The scientific content of a proposal — science goals, field setup, spectral se
 
 We will walk through the proposal preparation process in the order you would naturally encounter it in the OT. Along the way, we will use a concrete science case — Band 7 observations of the Cosmic Eyelash, a gravitationally lensed starburst galaxy at z = 2.3 — as a running example.
 
-A separate [science background]({% link docs/06_science_background.md %}) page covers the technical foundations (flux estimation, largest recoverable scale, ACA usage, spectral line sensitivity) that apply regardless of the specific proposal you are preparing. If you are new to interferometry or to ALMA, you may want to read that page first.
+A separate [science background](docs/06_science_background.md) page covers the technical foundations (flux estimation, largest recoverable scale, ACA usage, spectral line sensitivity) that apply regardless of the specific proposal you are preparing. If you are new to interferometry or to ALMA, you may want to read that page first.
 
 ---
 
-[Next: Before you start →]({% link docs/02_before_you_start.md %})
+[Next: Before you start →](02_before_you_start.md)
