@@ -60,7 +60,7 @@ When using the **Transition Filter** field in the spectral line picker, typing a
 
 ### Spatial visualiser: pointings cannot be moved or removed
 
-In the Aladin-based spatial visualiser, individual pointings can be **added** by clicking on the sky, but they currently **cannot be moved or removed** through the visualiser interface.
+In the Aladin-based spatial visualiser, individual pointings can be **shown** after adding them, but they currently **cannot be added, moved or removed** through the visualiser interface.
 
 {: .tip }
 > If you need fine control over pointing positions, define them in **CARTA** and import them into the OT via the import button. The file format must match the OT specification — see the [OT documentation](https://almascience.eso.org/proposing/observing-tool) for details.
@@ -71,7 +71,7 @@ The **"Reset FOV"** button resets not only the field of view but also any overla
 
 ### Spatial visualiser: no interactivity for rectangles
 
-When using the **Rectangle** target type for mosaics, the rectangle cannot be dragged, resized, or rotated in the visualiser. All parameters (field centre, dimensions, position angle) must be entered numerically in the parameter panel.
+When using the **Rectangle** target type for mosaics, the rectangle cannot be dragged, resized, or rotated in the visualiser. All parameters (field centre, dimensions, position angle) must be entered manually in the parameter panel.
 
 ### Mosaic reset when changing source
 
