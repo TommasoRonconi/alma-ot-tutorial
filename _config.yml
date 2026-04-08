@@ -66,6 +66,9 @@ callouts:
   new:
     title: New in Cycle 13
     color: purple
+
+# MathJax site-wide variable
+math: mathjax
     
 # Exclude files from build
 exclude:
