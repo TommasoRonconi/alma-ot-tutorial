@@ -4,11 +4,6 @@ title: "Worked example: the Cosmic Eyelash"
 nav_order: 7
 ---
 
-![Under construction](../images/under_construction.png)
-
-{: .warning}
-This page is under construction
-
 # Worked example: the Cosmic Eyelash
 
 This page walks through a complete proposal preparation, applying the concepts from the [science background](06_science_background.md) to a concrete case. The goal is not just to show you which buttons to click, but to illustrate the reasoning behind each technical choice.
