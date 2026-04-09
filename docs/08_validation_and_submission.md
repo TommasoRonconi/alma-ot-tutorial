@@ -137,7 +137,7 @@ Before making changes to a submitted proposal, consider whether you might want t
 
 ## Reporting bugs
 
-If you encounter a bug or unexpected behaviour in the web-based OT, you can report it through the ALMA helpdesk. The OT provides a direct link: click on your username (top-right corner of the header bar) and select **"Helpdesk"** from the dropdown menu.
+If you encounter a bug or unexpected behaviour in the web-based OT, you can report it through the ALMA helpdesk. The OT provides a direct link: click on your username (top-right corner of the header bar) and select **"Helpdesk"** from the dropdown menu (which opens by clicking on your username).
 
 ![Helpdesk link in the user menu](../images/08.03_helpdesk_link.png)
 
