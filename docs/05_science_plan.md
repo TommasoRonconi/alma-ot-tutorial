@@ -8,7 +8,10 @@ nav_order: 5
 
 The **Science Plan** tab is where the technical specification of your observations is defined. This is where you will spend most of your time in the OT.
 
-A proposal contains one or more **science goals**. Each science goal defines a self-contained set of observations: the targets, the spectral setup, the calibration strategy, and the desired performance (angular resolution, sensitivity). If you need to observe different targets with different setups, or the same target at different frequencies, you create separate science goals.
+A proposal contains one or more **science goals** (SG). Each science goal defines a self-contained set of observations: the targets, the spectral setup, the calibration strategy, and the desired performance (angular resolution, sensitivity).
+Note that, a SG can include up to five tunings per group of sources within 10 degrees on the sky, except for SGs that request long-baseline configurations, for which the grouping is limited to sources within 1 degree. Spectral scans or observations of targets with different radial velocities can thus be achieved within the same SG.
+
+If you need to observe different targets with different setups, or the same target at different frequencies, or in any case not entering within the conditions listed above, you create separate science goals.
 
 By default, a new proposal contains one empty science goal. Additional science goals can be added using the **+** button next to the "Science Goals" heading in the left sidebar.
 
@@ -69,6 +72,9 @@ You can:
 
 ![Field setup — Spatial visualiser](../images/05.05_field_setup_aladin.png)
 
+{: .important}
+The spatial visualiser has the only purpose of helping you while using the OT. No info about what happens within that panel will be uploaded at submission time.
+
 ### FOV Parameters
 
 {: .note}
@@ -102,7 +108,7 @@ For single-pointing or multi-pointing observations. You can add individual point
 > This behaviour can be changed by selecting "Absolute" as "Coordinate Type"
 
 **Rectangle:**  
-For rectangular mosaic fields. You specify the field centre offset, dimensions (p length, q length), position angle, and spacing. The number of pointings for both the 12m and 7m arrays is calculated automatically.
+For rectangular mosaic fields. You specify the field centre offset, dimensions (p length, q length), position angle, and spacing. The number of pointings for both the 12m and 7m arrays is calculated automatically (after the spectral setup is defined).
 
 ![Rectangle mosaic setup](../images/05.08_field_setup_rectangle.png)
 
@@ -120,10 +126,10 @@ For rectangular mosaic fields. You specify the field centre offset, dimensions (
 
 At the bottom of the Field setup, you specify the expected source properties:
 
-- **Peak Continuum Flux Density per Synthesized Beam** (Jy)
+- **Peak Continuum Flux Density per Synthesized Beam** (Jy/beam)
 - **Continuum Linear Polarization** (per cent)
 - **Continuum Circular Polarization** (per cent)
-- **Peak Line Flux Density per Synthesized Beam** (Jy) — for spectral line observations
+- **Peak Line Flux Density per Synthesized Beam** (Jy/beam) — for spectral line observations
 - **Line Width** (km/s) — for spectral line observations
 
 These values are used by the OT to compute signal-to-noise estimates and to populate the technical justification summary. They should be your best estimates based on existing data or theoretical predictions.
@@ -163,6 +169,8 @@ Below the visualisation, you select the **Spectral Type**:
 - **Spectral Scan** — for frequency surveys covering a continuous frequency range.
 
 The polarisation products are also selected here: **XX** (single polarisation), **DUAL** (default, recommended for most observations), or **FULL** (full polarisation — only if your science requires it).
+
+**From the ALMA Users guide:** In Single Polarization mode, only a single input polarization (XX) is recorded. Dual Polarization setup is used, separate spectra are obtained for the cross-correlated parallel hands (XX and YY).  Observations to measure the full intrinsic polarization (XX, XY, YX and YY) of sources are also offered for 12m Array TDM and FDM observations in Bands 1 through 7 as well as the stand-alone 7m Array in Bands 1 and 3 through 7.
 
 ### Spectral line configuration
 
@@ -228,7 +236,7 @@ Three options are available:
 - **User-defined calibration** — you specify the calibrators manually. This is rarely needed and should only be used if you have a specific reason.
 
 {: .tip }
-Unless you have a compelling scientific reason to change the calibration strategy, leave the default "System-defined calibration (recommended)".
+Unless you have a compelling scientific reason to change the calibration strategy, leave the default "System-defined calibration (recommended)". Not that any change to the system-defined calibration will have to be justified in the Technical Justification.
 
 ### Astrometry
 
@@ -310,6 +318,9 @@ This sub-tab shows a summary of the available array configurations at the freque
 The **Configuration Tables** button in the header bar provides more detailed information, including a table with angular resolution and MRS as a function of declination for each named configuration (ACA, C-1 through C-10).
 
 ![Configuration tables](../images/05.16_configuration_tables_popup.png)
+
+{: .new}
+Configuration Tables are a new feature which was not present in the desktop OT. The angular resolution numbers are computed assuming 100 GHz and should thus be re-scaled by the PI to the frequencies they are interested in.
 
 ---
 

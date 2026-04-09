@@ -13,7 +13,7 @@ Since Cycle 13, the Observing Tool is no longer a desktop application. It has be
 This tutorial walks you through the entire proposal preparation process, from setting up your science case to submitting your project.
 
 {: .new }
-The Web-based OT replaces the desktop Java application used in previous cycles. If you are familiar with the old OT, you will find that the scientific content of a proposal is the same — but the interface and the way proposals are managed have changed significantly.
+The Web-based OT replaces the desktop Java application used in previous cycles. If you are familiar with the old desktop OT, you will find that the functionalities of the tool are the same — but the interface and the way proposals are managed have changed significantly.
 
 ---
 

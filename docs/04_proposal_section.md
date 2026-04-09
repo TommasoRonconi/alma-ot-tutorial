@@ -21,12 +21,15 @@ This panel contains two fields:
 
 ![Main Project Information](../images/04.1_proposal_main_project_info.png)
 
+{: .note}
+When a proposal has been submitted, the assigned project code remains the same for any following re-submission: if you submit a version of the same proposal from a previously unsubmitted version (i.e. without the project code assigned), a new project code will be assigned and the system will check against duplications discarding one of them: in such cases write a helpdesk ticket to request the removal of one of the copies before the deadline
+
 ## Proposal Information
 
 This panel shows:
 
 - **Proposal cycle** — pre-filled and not editable (e.g. 2026.1).
-- **Abstract** — a free-text field for the proposal abstract. This is a required field.
+- **Abstract** — a free-text field for the proposal abstract (max 1200 characters). This is a required field.
 - **Generate PDF of Whole Proposal** — a button that generates a PDF preview of the entire proposal, including all science goals and technical justification.
 
 ![Proposal Information](../images/04.2_proposal_information.png)
@@ -67,7 +70,7 @@ These are both required fields. The scientific category and keywords are used by
 
 ## Joint Proposals
 
-If your proposal requires coordinated observations with another observatory (e.g. JWST, VLA, VLT), select "Yes" and specify the details. For most proposals, this is set to "No".
+If your proposal requires coordinated observations with another observatory (e.g. JWST, VLA, VLT), select "Yes" and specify the details: specific rules and requirements apply to different observatories. For most proposals, this is set to "No".
 
 ![Joint Proposals](../images/04.5_joint_proposal.png)
 
@@ -96,6 +99,10 @@ Other investigators are added using:
 - **Add CoI** — adds a Co-Investigator
 - **Add from project** — imports investigators from another proposal you have access to
 
+A couple of things to keep in mind:
+- all the CoI and CoPI must be registered in the ALMA science portal (it is better to cover the registration in advance to avoid last-minute inconveniences).
+- at least one of the members should opt-in as reviewer (tick on the relative button): in case the selected reviewer does not have the PhD one of the PhD-graded collaborators must act as mentor. A person can be selected as reviewer on at most 3 proposals. PIs remain responsible for the submission of the reviews associated with their proposal: if the review deadline is missed the proposal is discarded.
+
 {: .important }
 > All investigators listed on the proposal (PI, CoPI, CoI) have access to the proposal in the staging area and can edit it. Since autosaving is always active, this means any investigator can modify the proposal at any time.
 >
@@ -108,14 +115,14 @@ This panel provides a text field where you describe the scientific justification
 ![Science Case](../images/04.7_science_case.png)
 
 {: .tip }
-The Science Case text field supports basic formatting. Depending on the cycle, there may be a character limit — check the current [ALMA Proposer's Guide](https://almascience.eso.org/proposing/proposers-guide) for the exact constraints.
+The Science Case text field supports basic formatting. Depending on the cycle, there may be a character limit and/or a font-size limit — check the current [ALMA Proposer's Guide](https://almascience.eso.org/proposing/proposers-guide) for the exact constraints.
 
 {: .note}
 The system will check whether the limits have been respected: do not cheat, the system knows.
 
 ## Duplicate Observations
 
-This panel asks whether your targets have been observed by ALMA before, or whether there are other proposals requesting similar observations. If there are duplicates, you are expected to explain why your proposal is still justified (e.g. different angular resolution, different frequency, different sensitivity).
+This panel asks whether your targets have been observed by ALMA before, or whether there are other proposals accepted in previous cycles (check the [ALMA Duplications page](https://almascience.eso.org/proposing/duplications)). If there are duplicates, you are expected to explain why your proposal is still justified (e.g. different angular resolution, different frequency, different sensitivity).
 
 ![Duplicate Observations](../images/04.8_duplicate_observations.png)
 

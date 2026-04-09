@@ -28,12 +28,12 @@ If you want to test a different observing strategy or let a collaborator experim
 
 **Proposal statuses.** Proposals in the staging area can be in one of three states: *Draft*, *Submitted*, or *Submitted with Unsubmitted Changes*. Draft proposals can be deleted. Submitted proposals can only be retracted via a helpdesk ticket. If a submitted proposal has unsubmitted changes, you can revert it to the last submitted version — but the unsubmitted changes will be lost.
 
-**Copying proposals.** You can make a copy of any proposal (draft or submitted) via the "Open project as new proposal" function. The copy is created in draft status. This is useful for testing different observing strategies without modifying your original proposal.
+**Copying proposals.** You can make a copy of any proposal (draft or submitted) via the "Open project as new proposal" function. The copy is created in draft status. This is useful for testing different observing strategies without modifying your original proposal and for re-submitting old proposals (also pre-Cycle-13).
 
 {: .warning }
 Use the **tab** key rather than Enter to move between fields. The Enter key does not work reliably in all input fields of the web-based OT.
 
-## What has stayed the same
+## What has remained the same
 
 The scientific content of a proposal — science goals, field setup, spectral setup, calibration, control and performance, technical justification — follows the same logic as in the desktop OT. If you have prepared ALMA proposals before, the concepts and the information you need to provide are unchanged. The interface is different, but the workflow is not.
 
