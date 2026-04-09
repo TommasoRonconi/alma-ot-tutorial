@@ -95,14 +95,16 @@ As mentioned in the [introduction](01_introduction.md), the web-based OT autosav
 {: .warning }
 > There is no version history and no undo. If you overwrite a field, the previous value is gone. If you are about to make significant changes to a working proposal, consider making a copy first using "Open project as new proposal" from the header bar (i.e. icon **number 4** in the [header bar](#the-header-bar)).
 
-## Opening a project from the server
+## The staging area: opening a project from the server
 
-It is always possible to retrieve a draft or submitted project by opening the server archive (i.e. icon **number 3** in the [header bar](#the-header-bar)), it will look like this:
+It is always possible to retrieve a draft or submitted project by opening the staging area (i.e. icon **number 3** in the [header bar](#the-header-bar)), it will look like this:
 
-![Proposal Archive](../images/03.5_archive.png)
+![Staging Area](../images/03.5_archive.png)
 
 {: .tip}
 If you made a copy of your draft proposal you will find it here, along with all the other versions.
+
+Further details are provided in Section [Validation and Submission -- The staging area ](08_validation_and_submission.md#the-staging-area).
 
 ---
 
