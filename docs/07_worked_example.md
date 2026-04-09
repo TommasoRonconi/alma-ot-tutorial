@@ -36,12 +36,11 @@ We base our planning on two existing datasets:
 - Multiple resolved components (labelled A1, A2, B1, B2, C1, C2, D1, D2 in the literature)
 - Largest angular structure of individual components: $\sim 1''$
 - Total flux density: $S_\mathrm{tot} = 86\;\mathrm{mJy}$
-- Faintest component: $\sim 6\;\mathrm{mJy}$ ($3\sigma$ detection) <span style="color:red">**[CHECK: f.c. acronym interpreted as "faintest component"]**</span>
+- Faintest component: $\sim 6\;\mathrm{mJy}$ ($3\sigma$ detection)
 
-<!-- IMAGE NEEDED: cosmic_eyelash_sma.png -->
-![SMA continuum image of the Cosmic Eyelash](../images/cosmic_eyelash_sma.png)
-
-<span style="color:red">**[IMAGE REQUIRED: SMA 850 μm continuum image of the Cosmic Eyelash showing the multiple lensed components. Annotate with arrows indicating the total source extent (~5″) and the largest angular scale of individual components (~1″). Mark the synthesized beam in the corner. This grounds the entire worked example — it shows the source morphology driving all subsequent estimates. A schematic diagram of the component layout is acceptable if the original published figure cannot be used.]**</span>
+| ![SMA continuum image of the Cosmic Eyelash](../images/07.01_cosmic_eyelash_sma.png) |
+|---|
+| SMA 850 μm continuum image of the Cosmic Eyelash showing the multiple lensed components ([Swinbank et al., 2010](https://ui.adsabs.harvard.edu/abs/2010Natur.464..733S/abstract)). |
 
 ### PdBI CO(3-2) at 104.5 GHz (Band 3)
 
@@ -51,10 +50,9 @@ We base our planning on two existing datasets:
 - Peak flux density: $F_\mathrm{peak}[\mathrm{CO(3\text{-}2)}] = F[\mathrm{CO(3\text{-}2)}] / \mathrm{FWHM} = 13.8 / 600 \approx 23\;\mathrm{mJy}$
 - Source unresolved at $\theta_\mathrm{PdBI} = 1''$
 
-<!-- IMAGE NEEDED: cosmic_eyelash_co32.png -->
-![PdBI CO(3-2) spectrum](../images/cosmic_eyelash_co32.png)
-
-<span style="color:red">**[IMAGE REQUIRED: PdBI CO(3-2) spectrum showing the Gaussian-like line profile with FWHM ~600 km/s. Annotate with the FWHM, the peak flux (~23 mJy), and the integrated flux (13.8 Jy km/s). This is the starting point for estimating the CO(9-8) flux.]**</span>
+| ![PdBI CO(3-2) spectrum](../images/07.02_cosmic_eyelash_co32.png) |
+|---|
+| PdBI CO(3-2) spectrum showing the Gaussian-like line profile with FWHM ~600 km/s and peak flux ~23 mJy ([Swinbank et al., 2010](https://ui.adsabs.harvard.edu/abs/2010Natur.464..733S/abstract)). |
 
 ---
 
@@ -128,7 +126,7 @@ $$
 
 ## Required sensitivity
 
-This is where the source morphology assumptions become critical. We want $\mathrm{S/N} = 20$ on the CO(9-8) peak. But the required rms depends on what we assume about the source structure at $0.2''$ resolution.
+This is where the source morphology assumptions become critical. We want $\mathrm{S/N} = 20$ on the CO(9-8) peak. But the required rms depends on what we assume about the source structure at $0.2''$ resolution (see also [Science Background - Peak flux estimation](06_science_background.md#peak-flux-estimation)).
 
 ### Case 1: source unresolved at $\theta_\mathrm{ALMA}$
 
@@ -213,10 +211,10 @@ The spectral setup for this observation uses **Spectral Line** type with **DUAL*
 - **Baseband 3** — continuum, centre frequency $\sim 301.0\;\mathrm{GHz}$ (sky), TDM
 - **Baseband 4** — continuum, centre frequency $\sim 302.0\;\mathrm{GHz}$ (sky), TDM
 
-<!-- IMAGE NEEDED: worked_example_spectral_setup.png -->
-![Spectral setup for the Cosmic Eyelash](../images/worked_example_spectral_setup.png)
+![Spectral setup for the Cosmic Eyelash](../images/07.03_spectral_setup_basebands.png)
 
-<span style="color:red">**[IMAGE REQUIRED: OT screenshot of the spectral setup for this observation. Show the frequency visualisation panel with the four basebands placed (one on CO(9-8), three on continuum), and the baseband table below showing the centre frequencies, transitions, bandwidths, and the Representative Window selection. This is the payoff screenshot — it shows what a correctly configured spectral setup looks like for a realistic observation.]**</span>
+When selected, the requested bands are shown in the frequency visualisation panel at the top of the page:
+![Spectral setup for the Cosmic Eyelash](../images/07.04_spectral_setup_view.png)
 
 {: .tip }
 In TDM mode, each baseband provides <span style="color:red">**[CHECK: verify TDM bandwidth and channel count for Cycle 13 — expected $\sim 2\;\mathrm{GHz}$ bandwidth with 128 channels, giving $\sim 15.6\;\mathrm{MHz}$ or $\sim 30\;\mathrm{km\;s^{-1}}$ channel width at $314\;\mathrm{GHz}$]**</span>. Since we need $100\;\mathrm{km\;s^{-1}}$ channels for the line sensitivity, we will average $\sim 3$ channels in post-processing.
@@ -236,10 +234,7 @@ In the Desired Performance sub-tab:
 | ACA | No |
 | Time-constrained | No |
 
-<!-- IMAGE NEEDED: worked_example_control_performance.png -->
-![Control and Performance for the Cosmic Eyelash](../images/worked_example_control_performance.png)
-
-<span style="color:red">**[IMAGE REQUIRED: OT screenshot of the Desired Performance sub-tab filled in with the values from the table above. This confirms that the numbers computed in the previous sections translate directly into specific OT fields.]**</span>
+![Control and Performance for the Cosmic Eyelash](../images/07.05_control_performance.png)
 
 ---
 
@@ -249,10 +244,7 @@ After entering all the parameters, navigate to the **Planning and Time Estimate*
 
 For this example, the OT gives an estimated total time of approximately <span style="color:red">**[CHECK: re-run the time estimate in the Cycle 13 OT — Cycle 2 value was $\sim 45$ minutes total, with $\sim 12$ min on source, $\sim 19$ min on calibrators, $\sim 14$ min overheads. The Cycle 13 value will differ due to changes in the number of antennas, overhead model, and correlator configuration.]**</span>.
 
-<!-- IMAGE NEEDED: worked_example_time_estimate.png -->
-![Time estimate for the Cosmic Eyelash](../images/worked_example_time_estimate.png)
-
-<span style="color:red">**[IMAGE REQUIRED: OT screenshot of the Planning and Time Estimate sub-tab showing the full time breakdown for this science goal. Include the input parameters summary, the estimated total time, the source table, the configuration combinations, and the calibration breakdown. This is a sanity-check screenshot — users can compare their own time estimates against this example.]**</span>
+![Time estimate for the Cosmic Eyelash](../images/07.06_time_estimate.png)
 
 ---
 
