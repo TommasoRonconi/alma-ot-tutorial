@@ -81,7 +81,7 @@ $$
 \theta_\mathrm{ALMA} \approx 0.2''
 $$
 
-In Band 7, ALMA configurations provide angular resolutions ranging from <span style="color:red">**[CHECK: verify angular resolution range for Cycle 13 Band 7 — Cycle 2 value was $0.13''$–$1.19''$]**</span>, so $0.2''$ is well within the accessible range.
+In Band 7, ALMA configurations provide angular resolutions ranging from $0.017''$ to $1.14''$ for the 12m array, so $0.2''$ is well within the accessible range.
 
 ### Largest angular scale
 
@@ -91,10 +91,11 @@ From the SMA image, the individual components have angular sizes of $\sim 1''$ o
 
 From the Configuration Information tab in the OT (or from the configuration tables):
 
-- Most extended 12m configuration at $314\;\mathrm{GHz}$: $\mathrm{MRS} \approx$ <span style="color:red">**[CHECK: verify MRS for most extended 12m config at 314 GHz in Cycle 13 — Cycle 2 value was $2.9''$]**</span>
-- Most compact 12m configuration at $314\;\mathrm{GHz}$: $\mathrm{MRS} \approx$ <span style="color:red">**[CHECK: verify MRS for most compact 12m config at 314 GHz in Cycle 13 — Cycle 2 value was $8.3''$]**</span>
+- Most extended 12m configuration at $314\;\mathrm{GHz}$: $\mathrm{MRS} \approx 0.17''$
+- Most compact 12m configuration at $314\;\mathrm{GHz}$: $\mathrm{MRS} \approx 9.98''$
 
-Our estimated LAS of $1''$ is well below the MRS even for the most extended configuration. **ACA is not needed.**
+Our estimated LAS of $1''$ is well below the MRS even for the most compact configuration. **ACA is not needed, but the OT already knows.**
+This should be a check for yourself, if ACA is triggered when you did not expect it, maybe you inserted some wrong value somewhere.
 
 {: .note }
 If the source had significant smooth emission on scales of several arcseconds (e.g. a diffuse halo around the lensed components), we would need to consider ACA. But based on the SMA image, the emission is concentrated in compact components.
@@ -116,7 +117,7 @@ F[\mathrm{CO(9\text{-}8)}] = \frac{F[\mathrm{CO(3\text{-}2)}]}{2.5} = \frac{13.8
 $$
 
 $$
-F_\mathrm{peak}[\mathrm{CO(9\text{-}8)}] = \frac{F[\mathrm{CO(9\text{-}8)}]}{\mathrm{FWHM}} = \frac{5.52}{600} \approx 9.2\;\mathrm{mJy}
+F_\mathrm{peak}[\mathrm{CO(9\text{-}8)}] = \frac{F[\mathrm{CO(9\text{-}8)}]}{\mathrm{FWHM}} = \frac{5.52}{600} \approx 9.2\;\mathrm{mJy/beam}
 $$
 
 {: .warning }
@@ -133,7 +134,7 @@ This is where the source morphology assumptions become critical. We want $\mathr
 If the CO(9-8) emission remains unresolved at $\theta_\mathrm{ALMA} = 0.2''$ (i.e. the emitting region is smaller than $0.2''$), then the peak flux per beam is the same as the total peak flux:
 
 $$
-\mathrm{rms} = \frac{F_\mathrm{peak}}{\mathrm{S/N}} = \frac{9.2}{20} \approx 0.5\;\mathrm{mJy}
+\mathrm{rms} = \frac{F_\mathrm{peak}}{\mathrm{S/N}} = \frac{9.2}{20} \approx 0.5\;\mathrm{mJy/beam}
 $$
 
 ### Case 2: source resolved into one extended component
@@ -147,7 +148,7 @@ R = \left(\frac{\theta_\mathrm{ALMA}}{\theta_\mathrm{PdBI}}\right)^2 = \left(\fr
 $$
 
 $$
-\mathrm{rms} = \frac{9.2 \times 0.04}{20} \approx 0.02\;\mathrm{mJy}
+\mathrm{rms} = \frac{9.2 \times 0.04}{20} \approx 0.02\;\mathrm{mJy/beam}
 $$
 
 ### Case 3: source resolved into $N$ components
@@ -161,16 +162,16 @@ R_N = \left(\frac{\theta_\mathrm{ALMA}}{D_\mathrm{cc}}\right)^2 = \left(\frac{0.
 $$
 
 $$
-\mathrm{rms} = \frac{(9.2/5) \times 0.0625}{20} \approx 0.006\;\mathrm{mJy}
+\mathrm{rms} = \frac{(9.2/5) \times 0.0625}{20} \approx 0.006\;\mathrm{mJy/beam}
 $$
 
 ### Summary of the three cases
 
 | Assumption | rms required |
 |---|---|
-| Unresolved at $0.2''$ | $\sim 0.5\;\mathrm{mJy}$ |
-| 1 component, $D \approx 1''$, uniform | $\sim 0.02\;\mathrm{mJy}$ |
-| 5 components, $D_\mathrm{cc} \approx 0.8''$, uniform | $\sim 0.006\;\mathrm{mJy}$ |
+| Unresolved at $0.2''$ | $\sim 0.5\;\mathrm{mJy/beam}$ |
+| 1 component, $D \approx 1''$, uniform | $\sim 0.02\;\mathrm{mJy/beam}$ |
+| 5 components, $D_\mathrm{cc} \approx 0.8''$, uniform | $\sim 0.006\;\mathrm{mJy/beam}$ |
 
 {: .important }
 > The required sensitivity spans nearly two orders of magnitude depending on the assumed morphology. For this source, the SMA continuum data show resolved, compact components, so Case 1 (unresolved) is the most realistic assumption for the individual clumps. We adopt $\mathrm{rms} \approx 0.5\;\mathrm{mJy}$ in a $100\;\mathrm{km\;s^{-1}}$ channel.
@@ -195,7 +196,7 @@ For the continuum, we use 3 of the 4 basebands (the fourth is allocated to CO(9-
 From the SMA data, the faintest continuum component has a flux of $\sim 6\;\mathrm{mJy}$ at $0.2''$ resolution. If we want to detect it at $\sim 15\sigma$, we need:
 
 $$
-\mathrm{rms}_\mathrm{cont} \approx \frac{1\;\mathrm{mJy}}{15} \approx 0.07\;\mathrm{mJy}
+\mathrm{rms}_\mathrm{cont} \approx \frac{1\;\mathrm{mJy}}{15} \approx 0.07\;\mathrm{mJy/beam}
 $$
 
 With $6\;\mathrm{GHz}$ aggregate bandwidth and the integration time driven by the line sensitivity requirement, the continuum rms achieved is typically well below this threshold. In other words, the continuum is "for free" — the time needed for the line observations already provides more than sufficient continuum sensitivity.
@@ -217,7 +218,7 @@ When selected, the requested bands are shown in the frequency visualisation pane
 ![Spectral setup for the Cosmic Eyelash](../images/07.04_spectral_setup_view.png)
 
 {: .tip }
-In TDM mode, each baseband provides <span style="color:red">**[CHECK: verify TDM bandwidth and channel count for Cycle 13 — expected $\sim 2\;\mathrm{GHz}$ bandwidth with 128 channels, giving $\sim 15.6\;\mathrm{MHz}$ or $\sim 30\;\mathrm{km\;s^{-1}}$ channel width at $314\;\mathrm{GHz}$]**</span>. Since we need $100\;\mathrm{km\;s^{-1}}$ channels for the line sensitivity, we will average $\sim 3$ channels in post-processing.
+In TDM mode, each baseband provides $\sim 2\;\mathrm{GHz}$ bandwidth with 128 channels, giving $\sim 15.6\;\mathrm{MHz}$ or $\sim 30\;\mathrm{km\;s^{-1}}$ channel width at $314\;\mathrm{GHz}$. In the reality we should also consider Hanning smoothing, which drops the real resolution down to $\sim 31.3\;\mathrm{MHz}$, thus giving us around 60 channels in total. Since we need $100\;\mathrm{km\;s^{-1}}$ channels for the line sensitivity, we are fine.
 
 ---
 
@@ -242,7 +243,7 @@ In the Desired Performance sub-tab:
 
 After entering all the parameters, navigate to the **Planning and Time Estimate** sub-tab to see the estimated observing time.
 
-For this example, the OT gives an estimated total time of approximately <span style="color:red">**[CHECK: re-run the time estimate in the Cycle 13 OT — Cycle 2 value was $\sim 45$ minutes total, with $\sim 12$ min on source, $\sim 19$ min on calibrators, $\sim 14$ min overheads. The Cycle 13 value will differ due to changes in the number of antennas, overhead model, and correlator configuration.]**</span>.
+For this example, the OT gives an estimated total time of approximately $\sim 43$ minutes total, with $\sim 11$ min on source, $\sim 30$ min on calibrators, $\sim 2$ min overheads.
 
 ![Time estimate for the Cosmic Eyelash](../images/07.06_time_estimate.png)
 
@@ -253,13 +254,13 @@ For this example, the OT gives an estimated total time of approximately <span st
 The technical justification for this science goal would cover:
 
 **Sensitivity:**  
-We request an rms of $0.5\;\mathrm{mJy}$ in $100\;\mathrm{km\;s^{-1}}$ channels at the representative frequency of $314.2\;\mathrm{GHz}$. This gives $\mathrm{S/N} \approx 20$ on the expected CO(9-8) peak flux of $\sim 9.2\;\mathrm{mJy}$ per beam, assuming the emission is concentrated in compact components unresolved at $0.2''$ (consistent with the SMA continuum morphology). The aggregate continuum bandwidth of $\sim 6\;\mathrm{GHz}$ gives a continuum rms of <span style="color:red">**[CHECK: verify continuum rms from the Cycle 13 OT — Cycle 2 value was $\sim 0.07\;\mathrm{mJy}$]**</span>, providing $\mathrm{S/N} > 15$ on the faintest continuum component ($\sim 1\;\mathrm{mJy}$).
+We request an rms of $0.5\;\mathrm{mJy}$ in $100\;\mathrm{km\;s^{-1}}$ channels at the representative frequency of $314.2\;\mathrm{GHz}$. This gives $\mathrm{S/N} \approx 20$ on the expected CO(9-8) peak flux of $\sim 9.2\;\mathrm{mJy}$ per beam, assuming the emission is concentrated in compact components unresolved at $0.2''$ (consistent with the SMA continuum morphology). The aggregate continuum bandwidth of $\sim 6\;\mathrm{GHz}$ gives a continuum rms of $\sim 0.07\;\mathrm{mJy/beam}$, providing $\mathrm{S/N} > 15$ on the faintest continuum component ($\sim 1\;\mathrm{mJy}$).
 
 **Imaging:**  
-We request $0.2''$ angular resolution to match the SMA continuum resolution at 850 μm and resolve the known lensed components. The largest angular structure is $\sim 1''$ (individual components), well within the MRS of the 12m array in even the most extended configuration (<span style="color:red">**[CHECK: verify MRS for the most extended config at $314\;\mathrm{GHz}$ in Cycle 13 — Cycle 2 value was $\sim 2.9''$]**</span>). ACA is not needed.
+We request $0.2''$ angular resolution to match the SMA continuum resolution at 850 μm and resolve the known lensed components. The largest angular structure is $\sim 1''$ (individual components), well within the MRS of the 12m array. ACA is not needed.
 
 **Correlator configuration:**  
-We use TDM with 4 basebands: one centred on CO(9-8) at $314.2\;\mathrm{GHz}$ and three on continuum. The native TDM resolution of <span style="color:red">**[CHECK: verify TDM native resolution at $314\;\mathrm{GHz}$ for Cycle 13]**</span> is adequate; we will average $\sim 3$ channels to reach $100\;\mathrm{km\;s^{-1}}$ for the line analysis. This gives $\sim 6$ independent velocity channels across the expected CO(9-8) FWHM of $600\;\mathrm{km\;s^{-1}}$.
+We use TDM with 4 basebands: one centred on CO(9-8) at $314.2\;\mathrm{GHz}$ and three on continuum. The native TDM resolution of 30 km/s is adequate; we will average $\sim 3$ channels to reach $100\;\mathrm{km\;s^{-1}}$ for the line analysis. This gives $\sim 6$ independent velocity channels across the expected CO(9-8) FWHM of $600\;\mathrm{km\;s^{-1}}$.
 
 ---
 
